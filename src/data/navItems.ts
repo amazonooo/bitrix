@@ -12,7 +12,7 @@ export const navItems = [
 	{
 		id: '3',
 		name: 'Разработка приложений',
-		href: '/',
+		href: '/appdevelop',
 	},
 	{
 		id: '4',
