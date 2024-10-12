@@ -27,7 +27,7 @@ export default function FeedbackTop() {
 							/>
 						</div>
 
-						<Button className='w-[240px]'>Получить аудит</Button>
+						<Button link='/' className='w-[240px]'>Получить аудит</Button>
 					</form>
 				</div>
 

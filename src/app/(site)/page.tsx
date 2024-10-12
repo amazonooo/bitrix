@@ -7,6 +7,7 @@ import FeedbackTop from './components/feedback/FeedbackTop'
 import Work from './components/work/Work'
 import Partners from './components/partners/Partners'
 import FeedbackBottom from './components/feedback/FeedbackBottom'
+import DevelopApp from './components/develop/DevelopApp'
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <HomeAdvantages />
       <FeedbackTop />
       <Work />
-      <div></div>
+      <DevelopApp />
       <Partners />
       <FeedbackBottom />
     </Container>

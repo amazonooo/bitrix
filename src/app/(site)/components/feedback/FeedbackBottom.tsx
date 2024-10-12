@@ -20,7 +20,7 @@ export default function FeedbackBottom() {
 								className='bg-white outline-none border-none rounded-[10px] pl-7 py-4 placeholder:text-use-gray focus:outline focus:outline-primary-blue transition-all duration-300'
 								placeholder='+7 (254) 973-88-02'
 							/>
-							<Button className='w-[240px]'>Получить аудит</Button>
+							<Button link='/' className='w-[240px]'>Получить аудит</Button>
 						</div>
 					</form>
 				</div>
