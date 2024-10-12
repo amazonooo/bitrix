@@ -2,7 +2,6 @@
 
 import AnimatedNumber from '@/components/ui/AnimatedNumber'
 import { useState } from 'react'
-import CountUp from 'react-countup'
 
 interface IHomeCard {
 	procent: number
