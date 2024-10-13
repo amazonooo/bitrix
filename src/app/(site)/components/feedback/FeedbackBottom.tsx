@@ -19,12 +19,12 @@ export default function FeedbackTop() {
 							<div className='flex flex-col lg:flex-row lg:items-center gap-5 mb-5'>
 								<input
 									type='tel'
-									className='bg-white outline-none border-none rounded-[10px] pl-7 py-4 placeholder:text-use-gray focus:outline focus:outline-primary-blue transition-all duration-300'
+									className='bg-white outline-none border-none rounded-[10px] pl-7 py-4 placeholder:text-use-gray focus:outline focus:outline-primary-blue transition-all duration-300 text-base lg:text-xl placeholder:lg:text-xl placeholder:text-base'
 									placeholder='+7 (254) 973-88-02'
 								/>
 							</div>
 
-							<Button link='/' className='lg:w-[240px] mb-7 py-[13px]'>
+							<Button link='/' className='h-[60px]'>
 								Получить аудит
 							</Button>
 						</form>
