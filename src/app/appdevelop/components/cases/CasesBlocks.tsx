@@ -1,94 +1,85 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import Modal from '@/components/shared/Modal'
 import { casesData } from '@/data/casesData'
+import { ArrowLeft, ArrowRight, CircleX } from 'lucide-react'
 import Image from 'next/image'
-import { MoveLeft, MoveRight } from 'lucide-react'
+import { useState } from 'react'
 
 export default function CasesBlocks() {
-	const [activeBlock, setActiveBlock] = useState(0)
-  const [currentImg, setCurrentImg] = useState(0)
+	const [currentCase, setCurrentCase] = useState(0)
+	const [currentImg, setCurrentImg] = useState(0)
+	const [isOpen, setIsOpen] = useState(false)
 
-	const { title, subtitle, intervalImgs } = casesData[activeBlock]
-
-	useEffect(() => {
-		if(activeBlock === 0) {
-			const interval = setInterval(() => {
-				setCurrentImg(prevImg => (prevImg === 0 ? 1 : 0))
-			}, 5000)
-
-			return () => clearInterval(interval)
+	const nextImage = () => {
+		if (currentImg === 0) {
+			setCurrentImg(1)
+		} else if (currentCase < casesData.length - 1) {
+			setCurrentImg(0)
+			setCurrentCase(currentCase + 1)
 		}
-	}, [])
-
-	const handleChangeCase = (idx: number) => {
-		setActiveBlock(idx)
-		setCurrentImg(0)
 	}
 
-	const handleNextImg = () => {
-		setCurrentImg((prevImg) => (prevImg + 1) % intervalImgs.length)
+	const prevImage = () => {
+		if (currentImg === 1) {
+			setCurrentImg(0)
+		} else if (currentCase > 0) {
+			setCurrentCase(currentCase - 1)
+			setCurrentImg(1)
+		}
 	}
 
-	const handlePrevImg = () => {
-		setCurrentImg((prevImg) => (prevImg - 1) % intervalImgs.length)
-	}
-
-  return (
+	return (
 		<div className='bg-sky w-full rounded-xl py-20 px-28 flex flex-col items-center relative mb-[60px]'>
 			<h1 className='text-5xl leading-[80px] text-primary-blue font-bold mb-[60px]'>
-				{title}
+				{casesData[currentCase].title}
 			</h1>
 
-			{activeBlock !== 0 && (
-				<div>
-					<div className='absolute top-1/2 -translate-y-1/2 right-8 cursor-pointer group'>
-						<MoveRight
-							size={30}
-							onClick={handleNextImg}
-							className='text-primary-blue transition-transform duration-300 group-hover:translate-x-1'
-						/>
-					</div>
-					<div className='absolute top-1/2 -translate-y-1/2 left-8 cursor-pointer group'>
-						<MoveLeft
-							size={30}
-							onClick={handlePrevImg}
-							className='text-primary-blue transition-transform duration-300 group-hover:-translate-x-1'
-						/>
-					</div>
-				</div>
-			)}
+			<button
+				className={`absolute top-1/2 left-7 -translate-y-1/2 w-[50px] h-[50px] rounded-[10px] bg-primary-blue flex items-center justify-center transition-all duration-300 ${
+					currentCase === 0 && currentImg === 0
+						? 'bg-sky border border-use-gray cursor-default text-use-gray'
+						: 'hover:bg-primary-blue/70 text-white'
+				}`}
+				onClick={prevImage}
+				disabled={currentCase === 0 && currentImg === 0}
+			>
+				<ArrowLeft />
+			</button>
 
-			<div className='relative w-[1096px] h-[625px] mb-[60px]'>
-				{intervalImgs.map((imgSrc, index) => (
-					<Image
-						key={index}
-						src={imgSrc}
-						alt={`Image ${index}`}
-						width={1096}
-						height={620}
-						className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
-							currentImg === index ? 'opacity-100' : 'opacity-0'
-						}`}
-					/>
-				))}
+			<button
+				className={`absolute top-1/2 right-7 -translate-y-1/2 w-[50px] h-[50px] rounded-[10px] bg-primary-blue flex items-center justify-center transition-all duration-300 ${
+					currentCase === casesData.length - 1 && currentImg === 1
+						? 'bg-sky border border-use-gray cursor-default text-use-gray'
+						: 'hover:bg-primary-blue/70 text-white'
+				}`}
+				onClick={nextImage}
+				disabled={currentCase === casesData.length - 1 && currentImg === 1}
+			>
+				<ArrowRight />
+			</button>
+
+			<div className='cursor-pointer' onClick={() => setIsOpen(true)}>
+				<Image
+					src={casesData[currentCase].intervalImgs[currentImg]}
+					alt='img'
+					width={1096}
+					height={620}
+					className='w-full h-full object-cover select-none'
+				/>
 			</div>
 
-			<h2 className='text-3xl font-medium text-primary-blue mb-5'>
-				{subtitle}
+			<h2 className='text-3xl font-medium text-primary-blue mt-8 select-none'>
+				{casesData[currentCase].subtitle}
 			</h2>
 
-			<div className='flex gap-x-2.5'>
-				{casesData.map((item, idx) => (
-					<div
-						key={item.id}
-						onClick={() => handleChangeCase(idx)}
-						className={`w-12 h-2.5 rounded-[10px] cursor-pointer ${
-							activeBlock === idx ? 'bg-primary-blue' : 'bg-use-gray'
-						}`}
-					/>
-				))}
-			</div>
+			{isOpen && (
+				<Modal
+					isOpen={isOpen}
+					imgSrc={casesData[currentCase].intervalImgs[currentImg]}
+					onClose={() => setIsOpen(false)}
+				/>
+			)}
 		</div>
 	)
 }
