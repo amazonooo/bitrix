@@ -18,7 +18,7 @@ export const homeCards = [
 	{
 		procent: 85,
 		desc: 'не используют текущую базу клиентов в маркетинговых целях — не делают рассылок, не реанимируют старых клиентов, в то же время, тратят деньги на привлечение новых. ',
-		bg: 'use-gray',
+		bg: 'white',
 		text: 'primary-blue',
 		descColor: 'black',
 		border: 'use-gray',

@@ -53,7 +53,7 @@ export default function Header() {
 			)}
 
 			{!isDesktop && (
-				<header className='fixed top-0 left-0 w-full py-5 px-5 sm:px-10 bg-white shadow-md'>
+				<header className='fixed top-0 left-0 w-full py-5 px-5 sm:px-10 bg-white shadow-md z-50'>
 					<nav className='flex items-center justify-between h-full'>
 						<Link
 							href={'/'}

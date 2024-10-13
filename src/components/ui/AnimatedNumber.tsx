@@ -10,9 +10,7 @@ interface IAnimatedNumber {
 
 const AnimatedNumber: FC<IAnimatedNumber> = ({ end, duration = 2.5 }) => {
 	return (
-		<div
-			className='text-3xl sm:text-4xl md:text-4xl lg:text-7xl font-semibold'
-		>
+		<div className='font-bold xl:text-7xl text-5xl md:text-6xl'>
 			<CountUp end={end} duration={duration} enableScrollSpy />
 		</div>
 	)

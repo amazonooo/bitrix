@@ -11,7 +11,7 @@ import DevelopApp from './components/develop/DevelopApp'
 
 export default function Home() {
   return (
-    <Container className='w-full overflow-x-clip flex flex-col gap-y-16 lg:gap-y-40'>
+    <Container className='w-full overflow-x-clip flex flex-col gap-y-20 lg:gap-y-40'>
       <HomeHero />
       <HomeCards />
       <HomeAdvantages />

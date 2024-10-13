@@ -8,15 +8,16 @@ export default function Footer() {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-		<footer className='mt-[150px] shadow-black shadow-2xl bg-white'>
-			<nav className='pl-[3.75rem] 2xl:pl-0 2xl:max-w-[1328.5px] 2xl:ml-auto 2xl:mr-auto py-[1.875rem] flex items-center justify-between'>
-				<div className='flex'>
+		<footer className='lg:mt-[150px] mt-24 shadow-black shadow-2xl bg-white'>
+			<nav className='lg:pl-[3.75rem] pl-0 2xl:pl-0 2xl:max-w-[1328.5px] 2xl:ml-auto 2xl:mr-auto py-[1.875rem] flex flex-col lg:flex-row items-center justify-between'>
+				<div className='flex flex-col lg:flex-row items-center lg:items-start'>
 					<Link
 						href={'/'}
 						className='text-2xl font-extrabold uppercase text-primary-blue mr-5'
 					>
-						УЦ ВОА
+						УМЦ ВОА
 					</Link>
+					<span className='mb-6 lg:mb-0 text-sm lg:text-base font-normal'>Учебный центр ВОА</span>
 					<div className='flex items-center gap-x-1.5'>
 						<MapPin className='text-primary-blue' />
 						<span className='text-xl font-medium'>
@@ -26,7 +27,7 @@ export default function Footer() {
 				</div>
 
 				<div
-					className={`flex items-center gap-x-1.5 group`}
+					className={`flex items-center gap-x-1.5 group mt-1.5 lg:mt-0`}
 				>
 					<Phone
             className={`text-primary-blue transition-transform duration-300 ${
