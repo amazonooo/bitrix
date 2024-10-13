@@ -2,10 +2,16 @@
 
 import { MapPin, Phone } from 'lucide-react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
 export default function Footer() {
   const [isHovered, setIsHovered] = useState(false)
+
+	const pathname = usePathname()
+	const isNotFound = pathname !== '/' && pathname !== '/appdevelop'
+
+	if (isNotFound) return null
 
   return (
 		<footer className='lg:mt-[150px] mt-24 shadow-black shadow-2xl bg-white'>

@@ -29,6 +29,6 @@ export const partners = [
 	},
 	{
 		id: '8',
-		logo: '/partner-8.png',
+		logo: '/partner-4.svg',
 	},
 ]

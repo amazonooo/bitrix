@@ -4,6 +4,7 @@ import { navItems } from '@/data/navItems'
 import { useScrollDirection } from '@/hooks/useScrollDirection'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
 
@@ -22,6 +23,11 @@ export default function Header() {
 	const isDesktop = useMediaQuery({ minWidth: 769 })
 
 	const [isOpen, setIsOpen] = useState(false)
+
+	const pathname = usePathname()
+	const isNotFound = pathname !== '/' && pathname !== '/appdevelop'
+
+	if (isNotFound) return null
 
   return (
 		<>
