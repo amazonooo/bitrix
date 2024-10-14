@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function FeedbackTop() {
 	return (
 		<Container className='w-full overflow-x-clip'>
-			<div className='w-full bg-sky lg:pl-20 lg:pt-20 lg:pr-8 rounded-xl pb-7 xl:pb-0'>
+			<section className='w-full bg-sky lg:pl-20 lg:pt-20 lg:pr-8 rounded-xl pb-7 xl:pb-0'>
 				<div className='flex flex-col lg:flex-row justify-between'>
 					<div className='flex flex-col lg:order-1 order-2 px-5 lg:px-0'>
 						<h1 className='lg:text-[2.5rem] text-3xl leading-[34px] font-bold mb-5 lg:mb-6 md:max-w-fit max-w-[270px]'>
@@ -39,7 +39,7 @@ export default function FeedbackTop() {
 						/>
 					</div>
 				</div>
-			</div>
+			</section>
 		</Container>
 	)
 }

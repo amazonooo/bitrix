@@ -8,7 +8,7 @@ import Container from '@/components/layout/Container'
 export default function Work() {
 	return (
 		<Container className='w-full overflow-x-clip'>
-			<div>
+			<section>
 				<Title title='Трансформируем отдел продаж' className='max-w-[800px]' />
 				<div className='flex flex-col items-center justify-center'>
 					<div className='grid grid-cols-1 grid-rows-1 lg:grid-cols-2 lg:grid-rows-2 gap-x-[50px] gap-y-10'>
@@ -32,7 +32,7 @@ export default function Work() {
 						Работать с нами
 					</Link>
 				</div>
-			</div>
+			</section>
 		</Container>
 	)
 }

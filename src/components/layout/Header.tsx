@@ -25,7 +25,10 @@ export default function Header() {
 	const [isOpen, setIsOpen] = useState(false)
 
 	const pathname = usePathname()
-	const isNotFound = pathname !== '/' && pathname !== '/appdevelop'
+	const isNotFound =
+		pathname !== '/' &&
+		pathname !== '/appdevelop' &&
+		pathname !== '/implementation'
 
 	if (isNotFound) return null
 

@@ -9,7 +9,10 @@ export default function Footer() {
   const [isHovered, setIsHovered] = useState(false)
 
 	const pathname = usePathname()
-	const isNotFound = pathname !== '/' && pathname !== '/appdevelop'
+	const isNotFound =
+		pathname !== '/' &&
+		pathname !== '/appdevelop' &&
+		pathname !== '/implementation'
 
 	if (isNotFound) return null
 
@@ -28,15 +31,15 @@ export default function Footer() {
 					</span>
 				</div>
 
-				<div className='flex gap-x-10'>
-					<div className='flex items-center gap-x-1.5'>
+				<div className='flex flex-col lg:flex-row items-center lg:items-start gap-x-10'>
+					<div className='flex items-center gap-x-1.5 lg:order-1 order-2'>
 						<MapPin className='text-primary-blue' />
 						<span className='text-xl font-medium'>
 							г. Балашиха, ул. Пионерская, д. 33
 						</span>
 					</div>
 
-					<div className={`flex items-center gap-x-1.5 group mt-1.5 lg:mt-0`}>
+					<div className={`flex items-center gap-x-1.5 group mt-1.5 lg:mt-0 order-1 lg:order-2`}>
 						<Phone
 							className={`text-primary-blue transition-transform duration-300 ${
 								isHovered ? '-translate-y-0.5' : 'translate-y-0.5'

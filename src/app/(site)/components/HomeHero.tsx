@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function HomeHero() {
   return (
 		<Container className='w-full overflow-x-clip'>
-			<div className='mt-[140px]'>
+			<section className='mt-[140px]'>
 				<Title
 					className='lg:max-w-[1110px] mb-10 max-w-[286px] sm:max-w-[400px] md:max-w-[800px]'
 					title='Автоматизируем процесс продаж на базе Bitrix24'
@@ -33,7 +33,7 @@ export default function HomeHero() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 		</Container>
 	)
 }

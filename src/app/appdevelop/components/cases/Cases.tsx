@@ -4,7 +4,7 @@ import Button from '@/components/ui/Button'
 
 export default function Cases() {
   return (
-		<div>
+		<section>
 			<Title title='Кейсы' />
 
 			<CasesBlocks />
@@ -29,6 +29,6 @@ export default function Cases() {
 
 				<Button link='/' className='w-[300px]'>Создать приложение</Button>
 			</div>
-		</div>
+		</section>
 	)
 }

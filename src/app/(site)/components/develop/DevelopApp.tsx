@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 export default function DevelopApp() {
   return (
-		<Container className='w-full overflow-x-clip'>
-			<div className='flex'>
-				<div className='bg-primary-blue rounded-xl px-[50px] pt-[60px] pb-6 xl:pb-[70px] -z-20'>
+		<Container className='w-full overflow-hidden'>
+			<section className='flex'>
+				<div className='bg-primary-blue rounded-xl px-7 md:px-[50px] pt-[60px] pb-6 lg:pb-3 -z-20'>
 					<h1 className='text-white xl:text-[4.875rem] text-[2rem] sm:text-[2.5rem] md:text-6xl lg:leading-[80px] leading-[32px] xl:leading-[80px] font-bold mb-6 xl:mb-11 max-w-[530px]'>
 						Разрабатываем приложения
 					</h1>
@@ -59,7 +59,7 @@ export default function DevelopApp() {
 						Попробовать
 					</Button>
 				</div>
-			</div>
+			</section>
 		</Container>
 	)
 }
