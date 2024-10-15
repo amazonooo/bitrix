@@ -13,7 +13,9 @@ export default function Footer() {
 		pathname !== '/' &&
 		pathname !== '/appdevelop' &&
 		pathname !== '/implementation' &&
-		pathname !== '/contacts'
+		pathname !== '/contacts' &&
+		pathname !== '/partners' &&
+		pathname !== '/services'
 
 	if (isNotFound) return null
 

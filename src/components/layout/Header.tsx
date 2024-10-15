@@ -29,7 +29,9 @@ export default function Header() {
 		pathname !== '/' &&
 		pathname !== '/appdevelop' &&
 		pathname !== '/implementation' &&
-		pathname !== '/contacts'
+		pathname !== '/contacts' &&
+		pathname !== '/partners' &&
+		pathname !== '/services'
 
 	if (isNotFound) return null
 
@@ -41,18 +43,18 @@ export default function Header() {
 						isVisible ? 'translate-y-0' : '-translate-y-full'
 					}`}
 				>
-					<nav className='pl-[3.75rem] 2xl:pl-0 2xl:max-w-[1328.5px] 2xl:ml-auto 2xl:mr-auto py-[1.875rem] flex items-center'>
+					<nav className='pl-5 xl:pl-[3.75rem] 2xl:pl-0 2xl:max-w-[1328.5px] 2xl:ml-auto 2xl:mr-auto py-[1.875rem] flex items-center'>
 						<Link
 							href={'/'}
-							className='text-2xl font-extrabold uppercase text-primary-blue mr-14'
+							className='text-xl xl:text-2xl font-extrabold uppercase text-primary-blue mr-10 xl:mr-14'
 						>
 							УМЦ ВОА
 						</Link>
-						<ul className='flex gap-x-10'>
+						<ul className='flex gap-x-6 xl:gap-x-10'>
 							{navItems.map(item => (
 								<li
 									key={item.id}
-									className={`relative text-lg font-medium after:w-0 after:h-0.5 after:absolute after:bg-black after:top-full after:left-0 hover:after:w-full after:transition-all after:duration-300 ${
+									className={`relative lg:text-sm xl:text-lg font-medium after:w-0 after:h-0.5 after:absolute after:bg-black after:top-full after:left-0 hover:after:w-full after:transition-all after:duration-300 w-fit ${
 										pathname === item.href ? 'text-primary-blue after:bg-primary-blue' : 'text-black'
 									}`}
 								>

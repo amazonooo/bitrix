@@ -10,10 +10,10 @@ export default function ImplementHero() {
 						<h1 className='lg:text-[4.875rem] text-[2rem] sm:text-[2.5rem] md:text-6xl lg:leading-[80px] leading-[38px] text-primary-blue font-bold mb-5 lg:mb-6'>
 							Внедрение Bitrix24
 						</h1>
-						<p className='text-xl font-medium lg:font-normal mb-5 block lg:hidden'>
+						<p className='text-xl font-medium mb-5 block lg:hidden'>
 							Начните внедрение с бесплатного аудита!
 						</p>
-						<p className='text-xl font-medium lg:font-normal mb-7 lg:mb-[80px] max-w-[460px]'>
+						<p className='text-xl font-medium mb-7 lg:mb-[80px] max-w-[460px]'>
 							Начните внедрение с бесплатного аудита! Мы изучим ваш отдел
 							продаж, найдём проблемные места и расскажем как легко они решаются
 							грамотным внедрением Bitrix24

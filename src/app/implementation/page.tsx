@@ -7,7 +7,7 @@ import ImplementBottom from './components/ImplementBottom'
 
 export default function implementationPage() {
 	return (
-		<Container className='w-full overflow-x-clip flex flex-col gap-y-16 lg:gap-y-40'>
+		<Container className='w-full overflow-x-clip flex flex-col gap-y-20 lg:gap-y-[150px]'>
 			<ImplementHero />
 			<Settings />
 			<Stages />
