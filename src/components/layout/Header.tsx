@@ -28,7 +28,8 @@ export default function Header() {
 	const isNotFound =
 		pathname !== '/' &&
 		pathname !== '/appdevelop' &&
-		pathname !== '/implementation'
+		pathname !== '/implementation' &&
+		pathname !== '/contacts'
 
 	if (isNotFound) return null
 
@@ -51,7 +52,9 @@ export default function Header() {
 							{navItems.map(item => (
 								<li
 									key={item.id}
-									className='relative text-lg font-medium after:w-0 after:h-0.5 after:absolute after:bg-black after:top-full after:left-0 hover:after:w-full after:transition-all after:duration-300'
+									className={`relative text-lg font-medium after:w-0 after:h-0.5 after:absolute after:bg-black after:top-full after:left-0 hover:after:w-full after:transition-all after:duration-300 ${
+										pathname === item.href ? 'text-primary-blue after:bg-primary-blue' : 'text-black'
+									}`}
 								>
 									<Link href={item.href}>{item.name}</Link>
 								</li>

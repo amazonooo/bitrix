@@ -4,7 +4,7 @@ export default function Title({ title, className }: { title: string, className?:
   return (
 		<h1
 			className={cn(
-				'lg:text-[4.875rem] text-[2rem] sm:text-[2.5rem] md:text-6xl lg:leading-[80px] leading-[38px] text-primary-blue font-bold mb-[60px]',
+				'lg:text-[4.875rem] text-[2rem] sm:text-[2.5rem] md:text-6xl lg:leading-[80px] leading-[38px] text-primary-blue font-bold mb-10 lg:mb-[60px]',
 				className
 			)}
 		>

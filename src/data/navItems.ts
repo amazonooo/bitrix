@@ -7,7 +7,7 @@ export const navItems = [
 	{
 		id: '2',
 		name: 'Консалтинговые ислуги',
-		href: '/',
+		href: '/sf',
 	},
 	{
 		id: '3',
@@ -17,16 +17,16 @@ export const navItems = [
 	{
 		id: '4',
 		name: 'Кейсы',
-		href: '/',
+		href: '/cases',
 	},
 	{
 		id: '5',
 		name: 'Партнеры',
-		href: '/',
+		href: '/partners',
 	},
 	{
 		id: '6',
 		name: 'Контакты',
-		href: '/',
+		href: '/contacts',
 	},
 ]

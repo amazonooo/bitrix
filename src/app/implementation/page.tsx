@@ -2,6 +2,8 @@ import Container from '@/components/layout/Container'
 import ImplementHero from './components/ImplementHero'
 import Settings from './components/Settings'
 import Stages from './components/Stages'
+import SecondSettings from './components/SecondSettings'
+import ImplementBottom from './components/ImplementBottom'
 
 export default function implementationPage() {
 	return (
@@ -9,6 +11,8 @@ export default function implementationPage() {
 			<ImplementHero />
 			<Settings />
 			<Stages />
+			<SecondSettings />
+			<ImplementBottom />
 		</Container>
 	)
 }

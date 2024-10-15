@@ -12,7 +12,8 @@ export default function Footer() {
 	const isNotFound =
 		pathname !== '/' &&
 		pathname !== '/appdevelop' &&
-		pathname !== '/implementation'
+		pathname !== '/implementation' &&
+		pathname !== '/contacts'
 
 	if (isNotFound) return null
 

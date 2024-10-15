@@ -1,16 +1,16 @@
 import Title from '@/components/ui/Title'
-import { setData } from '@/data/setData'
+import { setData, setData2 } from '@/data/setData'
 
-export default function Settings() {
-  return (
+export default function SecondSettings() {
+	return (
 		<section>
 			<Title
-				title='Что включает настройка Bitrix24'
+				title='Что вы получаете, обращаясь к нам'
 				className='max-w-[780px]'
 			/>
 
 			<div className='flex flex-col'>
-				{setData.map((sd, idx) => (
+				{setData2.map((sd, idx) => (
 					<div
 						key={idx}
 						className='py-10 flex flex-col lg:flex-row gap-x-40 gap-y-5 border-b-2 border-use-gray'

@@ -1,4 +1,4 @@
-export const partners = [
+export const partners1 = [
 	{
 		id: '1',
 		logo: '/partner-1.svg',
@@ -15,20 +15,23 @@ export const partners = [
 		id: '4',
 		logo: '/partner-4.svg',
 	},
+]
+
+export const partners2 = [
 	{
-		id: '5',
+		id: '1',
 		logo: '/partner-5.svg',
 	},
 	{
-		id: '6',
+		id: '2',
 		logo: '/partner-6.svg',
 	},
 	{
-		id: '7',
+		id: '3',
 		logo: '/partner-2.svg',
 	},
 	{
-		id: '8',
-		logo: '/partner-4.svg',
+		id: '4',
+		logo: '/partner-8.png',
 	},
 ]
