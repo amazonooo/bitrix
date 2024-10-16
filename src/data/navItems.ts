@@ -17,7 +17,7 @@ export const navItems = [
 	{
 		id: '4',
 		name: 'Кейсы',
-		href: '/cases',
+		href: '/case',
 	},
 	{
 		id: '5',

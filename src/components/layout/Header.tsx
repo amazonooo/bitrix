@@ -31,7 +31,8 @@ export default function Header() {
 		pathname !== '/implementation' &&
 		pathname !== '/contacts' &&
 		pathname !== '/partners' &&
-		pathname !== '/services'
+		pathname !== '/services' &&
+		pathname !== '/case'
 
 	if (isNotFound) return null
 

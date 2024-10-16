@@ -3,7 +3,7 @@ import ContactsHero from './components/ContactsHero'
 
 export default function ContactsPage() {
   return (
-    <Container className=''>
+    <Container>
       <ContactsHero />
     </Container>
   )
