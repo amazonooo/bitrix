@@ -24,7 +24,7 @@ export default function DevelopHero() {
 					</div>
 					<Button
 						variant='sky'
-						link='/'
+						
 						className='xl:w-[215px] bg-white text-primary-blue flex xl:hidden mb-6'
 					>
 						Разработать приложение
@@ -40,7 +40,7 @@ export default function DevelopHero() {
 						Улучшение сервиса, обучение, повышение лояльности и увеличение
 						продаж — эти и другие задачи мы решаем с помощью приложений
 					</p>
-					<Button variant='sky' link='/' className='w-[345px]'>
+					<Button variant='sky'  className='w-[345px]'>
 						Разработать приложение
 					</Button>
 				</div>

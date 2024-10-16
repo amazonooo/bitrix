@@ -7,6 +7,10 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
+import {
+	LazyMotion, domAnimation, m
+} from 'framer-motion'
+import { MapPin, Phone } from 'lucide-react'
 
 export default function Header() {
   const scrollDirection = useScrollDirection()
@@ -23,6 +27,23 @@ export default function Header() {
 	const isDesktop = useMediaQuery({ minWidth: 769 })
 
 	const [isOpen, setIsOpen] = useState(false)
+	const [isClosing, setIsClosing] = useState(false)
+
+	const toggleMorePanel = () => {
+		if (isOpen) {
+			setIsClosing(true)
+			setTimeout(() => {
+				setIsOpen(false)
+				setIsClosing(false)
+			}, 300)
+		} else {
+			setIsOpen(true)
+		}
+	}
+
+	const menuClose = () => {
+		setIsOpen(false)
+	}
 
 	const pathname = usePathname()
 	const isNotFound =
@@ -35,6 +56,18 @@ export default function Header() {
 		pathname !== '/case'
 
 	if (isNotFound) return null
+
+	useEffect(() => {
+		if(isOpen) {
+			document.body.classList.add('overflow-hidden')
+		} else {
+			document.body.classList.remove('overflow-hidden')
+		}
+
+		return () => {
+			document.body.classList.remove('overflow-hidden')
+		}
+	}, [isOpen])
 
   return (
 		<>
@@ -56,7 +89,9 @@ export default function Header() {
 								<li
 									key={item.id}
 									className={`relative lg:text-sm xl:text-lg font-medium after:w-0 w-fit hover:text-primary-blue transition-colors duration-300 ${
-										pathname === item.href ? 'text-primary-blue after:bg-primary-blue' : 'text-black'
+										pathname === item.href
+											? 'text-primary-blue after:bg-primary-blue'
+											: 'text-black'
 									}`}
 								>
 									<Link href={item.href}>{item.name}</Link>
@@ -68,7 +103,9 @@ export default function Header() {
 			)}
 
 			{!isDesktop && (
-				<header className='fixed top-0 left-0 w-full py-5 px-5 sm:px-10 bg-white shadow-md z-50'>
+				<header
+					className={`fixed top-0 left-0 w-full py-6 px-5 sm:px-10 z-50 transition-colors duration-500 bg-white`}
+				>
 					<nav className='flex items-center justify-between h-full'>
 						<Link
 							href={'/'}
@@ -80,22 +117,22 @@ export default function Header() {
 							<input
 								className='peer hidden'
 								type='checkbox'
-								onClick={() => setIsOpen(!isOpen)}
+								onClick={toggleMorePanel}
 							/>
 							<div
-								className={`rounded-2xl h-[3px] w-1/2 bg-black duration-500 origin-right ${
+								className={`rounded-2xl h-[3px] w-1/2 bg-black duration-300 origin-right ${
 									isOpen
 										? 'rotate-[225deg] -translate-x-[12px] -translate-y-[1px]'
 										: ''
 								}`}
 							></div>
 							<div
-								className={`rounded-2xl h-[3px] w-full bg-black duration-500 ${
+								className={`rounded-2xl h-[3px] w-full bg-black duration-300 ${
 									isOpen ? '-rotate-45' : ''
 								}`}
 							></div>
 							<div
-								className={`rounded-2xl h-[3px] w-1/2 bg-black duration-500 place-self-end origin-left ${
+								className={`rounded-2xl h-[3px] w-1/2 bg-black duration-300 place-self-end origin-left ${
 									isOpen
 										? 'rotate-[225deg] translate-x-[12px] translate-y-[1px]'
 										: ''
@@ -103,6 +140,56 @@ export default function Header() {
 							></div>
 						</label>
 					</nav>
+					{isOpen && (
+						<div
+							className={`fixed top-0 left-0 bg-sky h-screen w-full ${
+								isClosing ? 'animate-slide-down' : 'animate-slide-up'
+							}`}
+						>
+							<div className='px-5 sm:px-10'>
+								<ul className='mt-[150px] flex flex-col gap-y-6 max-w-[235px] mb-[123px]'>
+									{navItems.map(item => (
+										<li key={item.id}>
+											<Link
+												className='text-[26px] leading-[31px] font-bold'
+												href={item.href}
+											>
+												{item.name}
+											</Link>
+										</li>
+									))}
+								</ul>
+
+								<div className='flex flex-col gap-y-6'>
+									<div>
+										<h1 className='text-xl font-semibold'>УМЦ ВОА</h1>
+										<h2 className='text-sm font-normal'>Учебный центр</h2>
+										<h2 className='text-sm font-normal'>
+											“Всероссийское общество автомобилистов”
+										</h2>
+									</div>
+									<div>
+										<div className={`flex items-center gap-x-1.5 group mt-1.5`}>
+											<Phone
+												size={17}
+												className={`text-primary-blue transition-transform duration-300`}
+											/>
+											<span className='text-base font-normal'>
+												+7 (916) 370-72-02
+											</span>
+										</div>{' '}
+										<div className={`flex items-center gap-x-1.5 group mt-1.5`}>
+											<MapPin size={17} className={`text-primary-blue`} />
+											<span className='text-base font-normal'>
+												{' '}
+												г. Балашиха, ул. Пионерская, д. 33
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					)}
 				</header>
 			)}
 		</>

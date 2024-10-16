@@ -3,23 +3,25 @@
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { useState } from 'react'
+import Modal from '../shared/Modal'
+import BitrixModal from '../shared/BitrixModal'
 
 interface IButton {
 	className?: string
 	children: React.ReactNode
-	link: string
 	variant: 'blue' | 'white' | 'sky'
 }
 
 export default function Button(btn: IButton) {
 	const [color, setColor] = useState(btn.variant)
+	const [isOpen, setIsOpen] = useState(false)
+
 
   return (
-		<Link
-			href={btn.link}
-			type='submit'
+		<div
+			onClick={() => setIsOpen(true)}
 			className={cn(
-				`rounded-[10px] bg-primary-blue px-10 py-[15px] flex items-center justify-center font-bold text-base md:text-xl ${
+				`cursor-pointer rounded-[10px] bg-primary-blue px-10 py-[15px] flex items-center justify-center font-bold text-base md:text-xl ${
 					color === 'blue'
 						? 'text-white hover:text-primary-blue hover:bg-white bg-primary-blue transition-all duration-300'
 						: ''
@@ -36,6 +38,12 @@ export default function Button(btn: IButton) {
 			)}
 		>
 			{btn.children}
-		</Link>
+			{isOpen && (
+				<BitrixModal
+					isOpen={isOpen}
+					onClose={() => setIsOpen(false)}
+				></BitrixModal>
+			)}
+		</div>
 	)
 }

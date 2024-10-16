@@ -33,7 +33,7 @@ export default function ImplementBottom() {
 							и систему данных по продажам.
 						</p>
 					</div>
-					<Button variant='sky' link='/' className='hidden xl:block w-[265px]'>
+					<Button variant='sky'  className='hidden xl:block w-[265px]'>
 						Внедрить Bitrix24
 					</Button>
 				</div>

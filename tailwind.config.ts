@@ -90,6 +90,22 @@ const config: Config = {
 						transform: 'translateY(0)',
 					},
 				},
+				'slide-up': {
+					'0%': {
+						transform: 'translateX(100%)',
+					},
+					'100%': {
+						transform: 'translateX(0)',
+					},
+				},
+				'slide-down': {
+					'0%': {
+						transform: 'translateX(0)',
+					},
+					'100%': {
+						transform: 'translateX(100%)',
+					},
+				},
 				'accordion-down': {
 					from: {
 						height: '0',
@@ -112,6 +128,8 @@ const config: Config = {
 				'card-down': 'card-down 0.8s ease',
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
+				'slide-up': 'slide-up 0.5s ease',
+				'slide-down': 'slide-down 0.5s ease',
 				scroll:
 					'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
 			},

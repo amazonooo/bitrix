@@ -24,7 +24,7 @@ export default function FeedbackTop() {
 								/>
 							</div>
 
-							<Button variant='blue' link='/' className='h-[60px]'>
+							<Button variant='blue'  className='h-[60px]'>
 								Получить аудит
 							</Button>
 						</form>

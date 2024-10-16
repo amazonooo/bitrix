@@ -16,7 +16,7 @@ export default function ServicesHero() {
 							результативности деятельности через поиск и более эффективных
 							методов планирования и организации процессов.
 						</p>
-						<Button variant='blue' link='/' className='sm:w-[267px] mb-7 xl:mb-0'>
+						<Button variant='blue'  className='sm:w-[267px] mb-7 xl:mb-0'>
 							Связаться с нами
 						</Button>
 					</div>
