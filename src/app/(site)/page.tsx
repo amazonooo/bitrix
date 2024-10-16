@@ -8,6 +8,7 @@ import Work from './components/work/Work'
 import Partners from './components/partners/Partners'
 import FeedbackBottom from './components/feedback/FeedbackBottom'
 import DevelopApp from './components/develop/DevelopApp'
+import Sertificats from './components/sertificats/Sertificats'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
 			<Work />
 			<DevelopApp />
 			<Partners />
+			<Sertificats />
 			<FeedbackBottom />
 		</div>
 	)

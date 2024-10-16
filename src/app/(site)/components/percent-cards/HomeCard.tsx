@@ -17,7 +17,7 @@ export default function HomeCard(card: IHomeCard) {
 
   return (
 		<article
-			className={`h-[418px] flex flex-col justify-center rounded-xl px-11 lg:group lg:transition-transform lg:duration-300 ${
+			className={`lg:h-[418px] min-h-[309px] pt-11 pb-7 lg:pt-[70px] lg:pb-[90px] flex flex-col justify-center rounded-xl px-7 lg:px-11 lg:group lg:transition-transform lg:duration-300 ${
 				isHovered ? 'lg:-translate-y-2' : 'lg:translate-y-2'
 			} bg-${card.bg} border border-${card.border}`}
 			onMouseEnter={() => setIsHovered(true)}
@@ -29,7 +29,7 @@ export default function HomeCard(card: IHomeCard) {
 				</span>
 				<span className='xl:text-7xl text-5xl md:text-6xl font-bold'>%</span>
 			</h2>
-			<p className={`text-xl font-medium text-${card.descColor}`}>
+			<p className={`text-sm sm:text-base lg:text-xl font-medium text-${card.descColor}`}>
 				{card.desc}
 			</p>
 		</article>

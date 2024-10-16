@@ -83,8 +83,7 @@ export const InfiniteMovingCards = ({
 						className='relative rounded-xl bg-sky py-7 lg:py-8 px-16 lg:px-24 flex items-center justify-center min-h-[169px] max-h-[170px]'
 						key={item.logo}
 					>
-						<Image src={item.logo} alt='logo' width={98} height={25} className='block lg:hidden' />
-						<Image src={item.logo} alt='logo' width={180} height={30} className='hidden lg:block' />
+						<Image src={item.logo} alt='logo' width={180} height={30} />
 					</li>
 				))}
 			</ul>
