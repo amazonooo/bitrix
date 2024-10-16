@@ -160,7 +160,7 @@ export default function Header() {
 									))}
 								</ul>
 
-								<div className='flex flex-col gap-y-6'>
+								<div className='flex flex-col gap-y-6 mb-20'>
 									<div>
 										<h1 className='text-xl font-semibold'>УМЦ ВОА</h1>
 										<h2 className='text-sm font-normal'>Учебный центр</h2>

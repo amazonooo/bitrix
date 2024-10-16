@@ -5,7 +5,7 @@ export default function DevelopHero() {
   return (
 		<section className='mt-[140px] lg:mt-[180px]'>
 			<div className='flex'>
-				<div className='bg-primary-blue rounded-xl px-7 md:px-[50px] pt-[60px] -z-20'>
+				<div className='bg-primary-blue rounded-xl px-[26px] md:px-[50px] pt-[60px] -z-20'>
 					<h1 className='text-white xl:text-[4.875rem] text-[2rem] sm:text-[2.5rem] md:text-6xl lg:leading-[80px] leading-[32px] xl:leading-[80px] font-bold mb-6 xl:mb-11 max-w-[530px]'>
 						Разработка приложений
 					</h1>
@@ -40,7 +40,7 @@ export default function DevelopHero() {
 						Улучшение сервиса, обучение, повышение лояльности и увеличение
 						продаж — эти и другие задачи мы решаем с помощью приложений
 					</p>
-					<Button variant='sky'  className='w-[345px]'>
+					<Button variant='sky' className='lg:w-[345px] whitespace-nowrap'>
 						Разработать приложение
 					</Button>
 				</div>

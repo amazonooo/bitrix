@@ -16,7 +16,7 @@ export default function ForWho() {
 				<div className='flex flex-col w-full pt-5 gap-y-2.5'>
 					<div className='border-b-2 border-b-use-gray py-2.5 lg:py-6 flex items-center gap-x-3.5'>
 						<Square
-							className='text-primary-blue bg-primary-blue mt-1 lg:mt-1.5 rounded-[1px]'
+							className='text-primary-blue bg-primary-blue mt-[3px] lg:mt-1.5 rounded-[1px]'
 							size={10}
 						/>
 						<span className='text-xl font-semibold lg:text-3xl'>
@@ -25,7 +25,7 @@ export default function ForWho() {
 					</div>
 					<div className='border-b-2 border-b-use-gray py-2.5 lg:py-6 flex items-center gap-x-3.5'>
 						<Square
-							className='text-primary-blue bg-primary-blue mt-1 lg:mt-1.5 rounded-[1px]'
+							className='text-primary-blue bg-primary-blue mt-[3px] lg:mt-1.5 rounded-[1px]'
 							size={10}
 						/>
 						<span className='text-xl font-semibold lg:text-3xl'>
@@ -34,7 +34,7 @@ export default function ForWho() {
 					</div>
 					<div className='border-b-2 border-b-use-gray py-2.5 lg:py-6 flex items-center gap-x-3.5'>
 						<Square
-							className='text-primary-blue bg-primary-blue mt-1 lg:mt-1.5 rounded-[1px]'
+							className='text-primary-blue bg-primary-blue mt-[3px] lg:mt-1.5 rounded-[1px]'
 							size={10}
 						/>
 						<span className='text-xl font-semibold lg:text-3xl'>
@@ -43,7 +43,7 @@ export default function ForWho() {
 					</div>
 					<div className='border-b-2 border-b-use-gray py-2.5 lg:py-6 flex items-center gap-x-3.5'>
 						<Square
-							className='text-primary-blue bg-primary-blue mt-1 lg:mt-1.5 rounded-[1px]'
+							className='text-primary-blue bg-primary-blue mt-[3px] lg:mt-1.5 rounded-[1px]'
 							size={10}
 						/>
 						<span className='text-xl font-semibold lg:text-3xl'>
@@ -52,7 +52,7 @@ export default function ForWho() {
 					</div>
 					<div className='border-b-2 border-b-use-gray py-2.5 lg:py-6 flex items-center gap-x-3.5'>
 						<Square
-							className='text-primary-blue bg-primary-blue mt-1 lg:mt-1.5 rounded-[1px]'
+							className='text-primary-blue bg-primary-blue mt-[3px] lg:mt-1.5 rounded-[1px]'
 							size={10}
 						/>
 						<span className='text-xl font-semibold lg:text-3xl'>
