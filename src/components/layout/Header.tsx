@@ -149,7 +149,7 @@ export default function Header() {
 							<div className='px-5 sm:px-10'>
 								<ul className='mt-[150px] flex flex-col gap-y-6 max-w-[235px] mb-[123px]'>
 									{navItems.map(item => (
-										<li key={item.id}>
+										<li onClick={menuClose} key={item.id}>
 											<Link
 												className='text-[26px] leading-[31px] font-bold'
 												href={item.href}

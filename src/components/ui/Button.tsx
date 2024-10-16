@@ -16,7 +16,6 @@ export default function Button(btn: IButton) {
 	const [color, setColor] = useState(btn.variant)
 	const [isOpen, setIsOpen] = useState(false)
 
-
   return (
 		<div
 			onClick={() => setIsOpen(true)}
@@ -38,12 +37,6 @@ export default function Button(btn: IButton) {
 			)}
 		>
 			{btn.children}
-			{isOpen && (
-				<BitrixModal
-					isOpen={isOpen}
-					onClose={() => setIsOpen(false)}
-				></BitrixModal>
-			)}
 		</div>
 	)
 }
