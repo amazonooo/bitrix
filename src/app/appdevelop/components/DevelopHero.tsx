@@ -23,6 +23,7 @@ export default function DevelopHero() {
 						<Image src={'/comp.png'} alt='comp' width={788} height={460} />
 					</div>
 					<Button
+						variant='sky'
 						link='/'
 						className='xl:w-[215px] bg-white text-primary-blue flex xl:hidden mb-6'
 					>
@@ -39,7 +40,7 @@ export default function DevelopHero() {
 						Улучшение сервиса, обучение, повышение лояльности и увеличение
 						продаж — эти и другие задачи мы решаем с помощью приложений
 					</p>
-					<Button link='/' className='w-[345px]'>
+					<Button variant='sky' link='/' className='w-[345px]'>
 						Разработать приложение
 					</Button>
 				</div>

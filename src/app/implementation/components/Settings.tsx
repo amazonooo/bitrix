@@ -20,7 +20,7 @@ export default function Settings() {
 							<Square
 								className='text-primary-blue bg-primary-blue mt-1 rounded-[1px]'
 								size={10}
-							/>{' '}
+							/>
 							<h2 className='text-xl lg:text-[26px] font-semibold min-w-[425px]'>
 								{sd.name}
 							</h2>

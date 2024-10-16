@@ -23,13 +23,41 @@ export default function HomeHero() {
 
 					<div className='flex flex-col gap-y-10 text-white'>
 						<div className='bg-primary-blue px-4 py-3 rounded-[20px] w-[290px] sm:w-[390px] 2xl:absolute 2xl:top-1/4 2xl:-translate-y-1/4 2xl:right-0 text-xl leading-[24px]'>
+							<div className=''>
+								<Image
+									src={'/polygon.png'}
+									alt='pol'
+									width={26}
+									height={26}
+									className='hidden 2xl:block 2xl:absolute 2xl:top-[52%] 2xl:-translate-y-1/4 2xl:right-[380px]'
+								/>
+							</div>
 							Подберём, настроим и адаптируем CRM-систему под ваш бизнес.
 						</div>
 						<div className='bg-primary-blue px-4 py-3 rotate-1 rounded-[20px] w-[290px] sm:w-[390px] text-xl leading-[24px] 2xl:absolute 2xl:top-1/2 2xl:-translate-y-1/2 2xl:right-5'>
-							Подберём, настроим и адаптируем CRM-систему под ваш бизнес.
+							<div>
+								<Image
+									src={'/polygon.png'}
+									alt='pol'
+									width={26}
+									height={26}
+									className='hidden 2xl:block 2xl:absolute 2xl:top-[52%] 2xl:-translate-y-1/4 2xl:right-[380px]'
+								/>
+							</div>
+							Научим пользоваться, анализировать и получать результат.{' '}
 						</div>
 						<div className='bg-primary-blue px-4 py-3 rounded-[20px] w-[290px] sm:w-[390px] text-xl leading-[24px] 2xl:absolute 2xl:top-[75%] 2xl:-translate-y-[75%] 2xl:right-0'>
-							Подберём, настроим и адаптируем CRM-систему под ваш бизнес.
+							<div>
+								<Image
+									src={'/polygon.png'}
+									alt='pol'
+									width={26}
+									height={26}
+									className='hidden 2xl:block 2xl:absolute 2xl:top-[52%] 2xl:-translate-y-1/4 2xl:right-[380px]'
+								/>
+							</div>
+							Изучим ваш отдел продаж, найдем проблемные места и расскажем как
+							легко они решаются.{' '}
 						</div>
 					</div>
 				</div>

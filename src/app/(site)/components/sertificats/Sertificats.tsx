@@ -1,4 +1,3 @@
-import Container from '@/components/layout/Container'
 import Title from '@/components/ui/Title'
 import SertifCard from './SertifCard'
 

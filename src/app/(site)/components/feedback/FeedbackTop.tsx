@@ -29,7 +29,7 @@ export default function FeedbackTop() {
 								/>
 							</div>
 
-							<Button link='/' className='lg:w-[240px] mb-7'>
+							<Button link='/' variant='blue' className='lg:w-[240px] mb-7'>
 								Получить аудит
 							</Button>
 						</form>

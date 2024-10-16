@@ -83,7 +83,7 @@ export const InfiniteSertCards = ({
 						className='relative rounded-xl bg-sky px-[39px] lg:px-[50px] py-8 lg:py-9 flex items-center justify-center'
 						key={item.logo}
 					>
-						<Image src={item.logo} alt='logo' width={327} height={460} />
+						<Image src={item.logo} alt='logo' width={327} height={461} />
 					</li>
 				))}
 			</ul>

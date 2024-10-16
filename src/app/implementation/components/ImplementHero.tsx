@@ -18,7 +18,7 @@ export default function ImplementHero() {
 							продаж, найдём проблемные места и расскажем как легко они решаются
 							грамотным внедрением Bitrix24
 						</p>
-						<Button link='/' className='lg:w-[267px] mb-7 lg:mb-0'>
+						<Button variant='blue' link='/' className='lg:w-[267px] mb-7 lg:mb-0'>
 							Внедрить Bitrix24
 						</Button>
 					</div>

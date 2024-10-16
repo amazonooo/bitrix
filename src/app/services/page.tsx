@@ -10,7 +10,7 @@ export default function page() {
 			<ServicesHero />
 			<ForWho />
       <OurServices />
-      <Benefit />
+      {/* <Benefit /> */}
 		</Container>
 	)
 }

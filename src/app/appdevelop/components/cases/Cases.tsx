@@ -27,7 +27,7 @@ export default function Cases() {
 					и важная информация и документы, и улучшения сервиса.
 				</p>
 
-				<Button link='/' className='w-[300px]'>Создать приложение</Button>
+				<Button variant='sky' link='/' className='w-[300px]'>Создать приложение</Button>
 			</div>
 		</section>
 	)

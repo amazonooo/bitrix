@@ -39,6 +39,7 @@ export default function DevelopApp() {
 						</div>
 					</div>
 					<Button
+						variant='sky'
 						link='/'
 						className='xl:w-[215px] bg-white text-primary-blue flex xl:hidden'
 					>
@@ -55,7 +56,7 @@ export default function DevelopApp() {
 						Улучшение сервиса, обучение, повышение лояльности и увеличение
 						продаж — эти и другие задачи мы решаем с помощью приложений
 					</p>
-					<Button link='/' className='w-[215px]'>
+					<Button variant='sky' link='/' className='w-[215px]'>
 						Попробовать
 					</Button>
 				</div>

@@ -27,7 +27,7 @@ export default function Work() {
 					</div>
 					<Link
 						href={'/'}
-						className='inline-flex rounded-[10px] bg-primary-blue px-10 py-[15px] items-center justify-center font-bold text-xl text-white hover:scale-105 hover:shadow-md transition-all duration-300'
+						className='inline-flex rounded-[10px] bg-primary-blue px-10 py-[15px] items-center justify-center font-bold text-xl text-white hover:text-primary-blue hover:bg-sky transition-all duration-300'
 					>
 						Работать с нами
 					</Link>

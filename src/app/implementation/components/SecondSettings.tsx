@@ -1,5 +1,6 @@
 import Title from '@/components/ui/Title'
 import { setData, setData2 } from '@/data/setData'
+import { Square } from 'lucide-react'
 
 export default function SecondSettings() {
 	return (
@@ -16,7 +17,10 @@ export default function SecondSettings() {
 						className='py-10 flex flex-col lg:flex-row gap-x-40 gap-y-5 border-b-2 border-use-gray'
 					>
 						<div className='flex items-center gap-x-2.5'>
-							<div className='lg:w-2.5 lg:h-2.5 w-3 h-3 bg-primary-blue rounded-[1px] hidden lg:block' />
+							<Square
+								className='text-primary-blue bg-primary-blue mt-1 rounded-[1px]'
+								size={10}
+							/>
 							<h2 className='text-xl lg:text-[26px] font-semibold min-w-[425px]'>
 								{sd.name}
 							</h2>

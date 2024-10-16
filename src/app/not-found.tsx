@@ -12,6 +12,7 @@ export default function NotFound() {
 				</h2>
 			</div>
 			<Button
+				variant={'blue'}
 				link='/'
 				className='text-white bg-primary-blue border-2 border-white px-20'
 			>

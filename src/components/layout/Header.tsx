@@ -51,11 +51,11 @@ export default function Header() {
 						>
 							УМЦ ВОА
 						</Link>
-						<ul className='flex gap-x-6 xl:gap-x-10'>
+						<ul className='flex gap-x-6 xl:gap-x-10 mt-0.5'>
 							{navItems.map(item => (
 								<li
 									key={item.id}
-									className={`relative lg:text-sm xl:text-lg font-medium after:w-0 after:h-0.5 after:absolute after:bg-black after:top-full after:left-0 hover:after:w-full after:transition-all after:duration-300 w-fit ${
+									className={`relative lg:text-sm xl:text-lg font-medium after:w-0 w-fit hover:text-primary-blue transition-colors duration-300 ${
 										pathname === item.href ? 'text-primary-blue after:bg-primary-blue' : 'text-black'
 									}`}
 								>

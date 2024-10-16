@@ -21,9 +21,6 @@ export default function HomeCards() {
 								key={idx}
 								procent={card.procent}
 								desc={card.desc}
-								bg={card.bg}
-								text={card.text}
-								descColor={card.descColor}
 								border={card.border}
 							/>
 						))}
@@ -31,24 +28,23 @@ export default function HomeCards() {
 				)}
 			</Container>
 
-			{!isDesktop && (
-				<section className='pl-5 sm:pl-10 block lg:hidden'>
-					<Swiper spaceBetween={21} slidesPerView={1.2}>
-						{homeCards.map((card, idx) => (
-							<SwiperSlide key={idx}>
-								<HomeCard
-									procent={card.procent}
-									desc={card.desc}
-									bg={card.bg}
-									text={card.text}
-									descColor={card.descColor}
-									border={card.border}
-								/>
-							</SwiperSlide>
-						))}
-					</Swiper>
-				</section>
-			)}
+			<section className='block lg:hidden'>
+				{!isDesktop && (
+					<div className='pl-5 sm:pl-10'>
+						<Swiper spaceBetween={21} slidesPerView={1.2}>
+							{homeCards.map((card, idx) => (
+								<SwiperSlide key={idx}>
+									<HomeCard
+										procent={card.procent}
+										desc={card.desc}
+										border={card.border}
+									/>
+								</SwiperSlide>
+							))}
+						</Swiper>
+					</div>
+				)}
+			</section>
 		</>
 	)
 }
