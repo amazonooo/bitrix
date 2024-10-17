@@ -21,7 +21,13 @@ export default function HomeHero() {
 						/>
 					</div>
 
-					<div className='flex flex-col gap-y-10 text-white'>
+					<div className='2xl:hidden flex flex-col gap-y-[30px]'>
+						<Image src={'/mes 1.png'} alt='mes' width={320} height={86} />
+						<Image src={'/mes 1.png'} alt='mes' width={320} height={86} />
+						<Image src={'/mes 1.png'} alt='mes' width={320} height={86} />
+					</div>
+
+					<div className='flex-col gap-y-10 text-white hidden 2x:block 2xl:flex'>
 						<div className='bg-primary-blue px-4 py-3 rounded-[20px] w-[290px] sm:w-[390px] 2xl:absolute 2xl:top-1/4 2xl:-translate-y-1/4 2xl:right-0 text-xl leading-[24px]'>
 							<div className=''>
 								<Image
