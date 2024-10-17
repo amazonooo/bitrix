@@ -148,7 +148,7 @@ export default function Header() {
 								isClosing ? 'animate-slide-down' : 'animate-slide-up'
 							}`}
 						>
-							<div className='px-5 sm:px-10 mt-[150px] mb-20'>
+							<div className='px-5 sm:px-10 pt-[150px] h-full pb-20'>
 								<ul className='flex flex-col gap-y-6 max-w-[235px] mb-24'>
 									{navItems.map(item => (
 										<li onClick={menuClose} key={item.id}>
