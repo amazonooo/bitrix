@@ -70,9 +70,9 @@ export default function Header() {
 	}, [isOpen])
 
   return (
-		<>
+		<header>
 			{isDesktop && (
-				<header
+				<div
 					className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 shadow-md bg-white ${
 						isVisible ? 'translate-y-0' : '-translate-y-full'
 					}`}
@@ -99,13 +99,13 @@ export default function Header() {
 							))}
 						</ul>
 					</nav>
-				</header>
+				</div>
 			)}
 
 			{!isDesktop && (
-				<header
-					className={`fixed top-0 left-0 w-full py-6 px-5 sm:px-10 z-50 transition-all duration-500 bg-white ${
-						isOpen ? 'shadow-none' : 'shadow-md'
+				<div
+					className={`fixed top-0 left-0 w-full pt-5 px-5 sm:px-10 z-50 transition-all duration-500 bg-white ${
+						isOpen ? 'shadow-none pb-0' : 'shadow-md pb-5'
 					}`}
 				>
 					<nav className='flex items-center justify-between h-full'>
@@ -144,12 +144,12 @@ export default function Header() {
 					</nav>
 					{isOpen && (
 						<div
-							className={`fixed top-0 left-0 bg-sky h-full w-full ${
+							className={`fixed -top-5 left-0 bg-sky h-full w-full ${
 								isClosing ? 'animate-slide-down' : 'animate-slide-up'
 							}`}
 						>
 							<div className='px-5 sm:px-10 pt-[150px] h-full pb-20'>
-								<ul className='flex flex-col gap-y-6 max-w-[235px] mb-24'>
+								<ul className='flex flex-col gap-y-6 max-w-[235px] mb-20'>
 									{navItems.map(item => (
 										<li onClick={menuClose} key={item.id}>
 											<Link
@@ -192,8 +192,8 @@ export default function Header() {
 							</div>
 						</div>
 					)}
-				</header>
+				</div>
 			)}
-		</>
+		</header>
 	)
 }
