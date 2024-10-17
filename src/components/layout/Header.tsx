@@ -108,7 +108,7 @@ export default function Header() {
 						isOpen ? 'shadow-none pb-0' : 'shadow-md pb-5'
 					}`}
 				>
-					<nav className='flex items-center justify-between h-full'>
+					<nav className='flex items-center justify-between'>
 						<Link
 							href={'/'}
 							className='text-2xl font-extrabold uppercase text-primary-blue z-[1000]'
@@ -144,7 +144,7 @@ export default function Header() {
 					</nav>
 					{isOpen && (
 						<div
-							className={`fixed -top-5 left-0 bg-sky h-full w-full ${
+							className={`fixed top-0 left-0 bg-sky h-full w-full ${
 								isClosing ? 'animate-slide-down' : 'animate-slide-up'
 							}`}
 						>
