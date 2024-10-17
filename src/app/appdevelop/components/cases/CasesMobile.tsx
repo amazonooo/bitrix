@@ -24,9 +24,8 @@ export default function CasesMobile() {
 			<Swiper
 				spaceBetween={16}
 				slidesPerView={1}
-				loop
         className='mb-6 lg:mb-[50px]'
-				onSlideChange={swiper => setCurrentCase(swiper.activeIndex)} // Обновление текущего слайда
+				onSlideChange={swiper => setCurrentCase(swiper.realIndex)}
 			>
 				{casesData.map((caseItem, index) => (
 					<SwiperSlide key={index}>
