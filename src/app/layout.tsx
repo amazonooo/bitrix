@@ -17,14 +17,14 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://kurs-avto.ru'),
+	metadataBase: new URL('https://kurs-auto.ru'),
 	title: {
 		default: 'УМЦ ВОА',
 		template: '%s | УМЦ ВОА',
 	},
 	description: 'Автоматизация бизнеса посредством Bitrix24',
 	alternates: {
-		canonical: new URL('https://kurs-avto.online'),
+		canonical: new URL('https://kurs-auto.online'),
 	},
 	openGraph: {
 		title: 'УМЦ ВОА',
@@ -32,13 +32,44 @@ export const metadata: Metadata = {
 		images: 'https://profpol.online/images/og-image.jpg',
 		type: 'website',
 		locale: 'en_US',
-		url: 'https://kurs-avto.ru',
+		url: 'https://kurs-auto.ru',
 		siteName: 'Profpol',
 	},
 	robots: {
 		index: true,
 		follow: true,
 	},
+	keywords: [
+		'bitrix24',
+		'битрикс',
+		'битрикс24',
+		'bitrix',
+		'бизнес',
+		'business',
+		'автоматизация бизнеса',
+		'автоматизация продаж bitrix',
+		'умц воа',
+		'Умц воа',
+		'УМЦ воа',
+		'УМЦ ВОА',
+		'аудит по битрикс',
+		'аудит по bitrix',
+		'внедрить bitrix',
+		'внедрить битрикс',
+		'Bitrix24',
+		'Битрикс',
+		'Битрикс24',
+		'Bitrix',
+		'Бизнес',
+		'Business',
+		'Автоматизация бизнеса',
+		'Автоматизация продаж bitrix',
+		'Аудит по битрикс',
+		'Аудит по bitrix',
+		'Внедрить bitrix',
+		'Внедрить битрикс',
+		'Внедрить Битрикс',
+	],
 	creator: 'amazonooo',
 }
 
