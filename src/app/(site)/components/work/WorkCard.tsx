@@ -104,7 +104,7 @@ export default function WorkCard(card: IWorkCard) {
 				<div
 					onClick={handleClickOutside}
 					// id='form-container'
-					className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50'
+					className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[500]'
 				>
 					<div id='form-container' ref={modalRef}></div>
 				</div>
