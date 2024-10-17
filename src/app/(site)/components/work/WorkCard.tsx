@@ -75,19 +75,19 @@ export default function WorkCard(card: IWorkCard) {
 				</h1>
 				<ul className='flex flex-col'>
 					<li className='text-base sm:text-lg lg:text-xl font-normal flex items-center gap-x-1'>
-						<div className='w-1 h-1 bg-black rounded-full mt-1'></div>
+						<div className='w-1 h-1 bg-black rounded-full mt-1 hidden lg:block'></div>
 						{card.list1}
 					</li>
 					<li className='text-base sm:text-lg lg:text-xl font-normal flex items-center gap-x-1'>
-						<div className='w-1 h-1 bg-black rounded-full mt-1'></div>
+						<div className='w-1 h-1 bg-black rounded-full mt-1 hidden lg:block'></div>
 						{card.list2}
 					</li>
 					<li className='text-base sm:text-lg lg:text-xl font-normal flex items-center gap-x-1'>
-						<div className='w-1 h-1 bg-black rounded-full mt-1'></div>
+						<div className='w-1 h-1 bg-black rounded-full mt-1 hidden lg:block'></div>
 						{card.list3}
 					</li>
 					<li className='text-base sm:text-lg lg:text-xl font-normal flex items-center gap-x-1'>
-						<div className='w-1 h-1 bg-black rounded-full mt-1'></div>
+						<div className='w-1 h-1 bg-black rounded-full mt-1 hidden lg:block'></div>
 						{card.list4}
 					</li>
 				</ul>

@@ -2,7 +2,12 @@ import Container from '@/components/layout/Container'
 import ServicesHero from './components/ServicesHero'
 import ForWho from './components/ForWho'
 import OurServices from './components/OurServices'
-import Benefit from './components/Benefit'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Консалтинговые услуги',
+	description: 'Консалтинг для бизнеса, наши услуги и кому они подходят.',
+}
 
 export default function page() {
   return (

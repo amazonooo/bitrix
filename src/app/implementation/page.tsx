@@ -4,6 +4,12 @@ import Settings from './components/Settings'
 import Stages from './components/Stages'
 import SecondSettings from './components/SecondSettings'
 import ImplementBottom from './components/ImplementBottom'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Внедрение',
+	description: 'Внедрение с бесплатного аудита, настройка bitrix24 и этапы внедрения.',
+}
 
 export default function implementationPage() {
 	return (

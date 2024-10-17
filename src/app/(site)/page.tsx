@@ -9,6 +9,12 @@ import Partners from './components/partners/Partners'
 import FeedbackBottom from './components/feedback/FeedbackBottom'
 import DevelopApp from './components/develop/DevelopApp'
 import Sertificats from './components/sertificats/Sertificats'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Главная страница',
+	description: 'Наши премущества, партнеры и обратная связь.',
+}
 
 export default function Home() {
   return (

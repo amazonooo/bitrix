@@ -144,12 +144,12 @@ export default function Header() {
 					</nav>
 					{isOpen && (
 						<div
-							className={`fixed top-0 left-0 bg-sky h-screen w-full ${
+							className={`fixed top-0 left-0 bg-sky h-full w-full ${
 								isClosing ? 'animate-slide-down' : 'animate-slide-up'
 							}`}
 						>
-							<div className='px-5 sm:px-10'>
-								<ul className='mt-[150px] flex flex-col gap-y-6 max-w-[235px] mb-24'>
+							<div className='px-5 sm:px-10 mt-[150px] mb-20'>
+								<ul className='flex flex-col gap-y-6 max-w-[235px] mb-24'>
 									{navItems.map(item => (
 										<li onClick={menuClose} key={item.id}>
 											<Link

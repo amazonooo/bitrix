@@ -3,6 +3,12 @@ import CaseHero from './components/CaseHero'
 import CaseMain from './components/CaseMain'
 import CaseBottom from './components/CaseBottom'
 import AboutUs from './components/AboutUs'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Кейсы',
+	description: 'Наши клиенты о нас, проблемы, которые мы решаем',
+}
 
 export default function CasPage() {
   return (
