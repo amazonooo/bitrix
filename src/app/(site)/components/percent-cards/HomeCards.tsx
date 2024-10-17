@@ -30,7 +30,7 @@ export default function HomeCards() {
 
 			<section className='block lg:hidden'>
 				{!isDesktop && (
-					<div className='pl-5 sm:pl-10'>
+					<div className='px-5 sm:px-10'>
 						<Swiper spaceBetween={21} slidesPerView={1.2}>
 							{homeCards.map((card, idx) => (
 								<SwiperSlide key={idx}>

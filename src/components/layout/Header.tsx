@@ -104,7 +104,9 @@ export default function Header() {
 
 			{!isDesktop && (
 				<header
-					className={`fixed top-0 left-0 w-full py-6 px-5 sm:px-10 z-50 transition-colors duration-500 bg-white`}
+					className={`fixed top-0 left-0 w-full py-6 px-5 sm:px-10 z-50 transition-all duration-500 bg-white ${
+						isOpen ? 'shadow-none' : 'shadow-md'
+					}`}
 				>
 					<nav className='flex items-center justify-between h-full'>
 						<Link
