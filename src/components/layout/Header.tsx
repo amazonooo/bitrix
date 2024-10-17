@@ -147,7 +147,7 @@ export default function Header() {
 							}`}
 						>
 							<div className='px-5 sm:px-10'>
-								<ul className='mt-[150px] flex flex-col gap-y-6 max-w-[235px] mb-[123px]'>
+								<ul className='mt-[150px] flex flex-col gap-y-6 max-w-[235px] mb-24'>
 									{navItems.map(item => (
 										<li onClick={menuClose} key={item.id}>
 											<Link
@@ -160,7 +160,7 @@ export default function Header() {
 									))}
 								</ul>
 
-								<div className='flex flex-col gap-y-6 mb-20'>
+								<div className='flex flex-col gap-y-6'>
 									<div>
 										<h1 className='text-xl font-semibold'>УМЦ ВОА</h1>
 										<h2 className='text-sm font-normal'>Учебный центр</h2>

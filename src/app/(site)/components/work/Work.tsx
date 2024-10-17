@@ -4,6 +4,7 @@ import WorkCard from './WorkCard'
 import Image from 'next/image'
 import Link from 'next/link'
 import Container from '@/components/layout/Container'
+import Button from '@/components/ui/Button'
 
 export default function Work() {
 	return (
@@ -25,12 +26,12 @@ export default function Work() {
 						))}
 						<Image src={'/man-laptop.png'} alt='man' width={535} height={535} />
 					</div>
-					<Link
-						href={'/'}
+					<Button
+						variant='sky'
 						className='inline-flex rounded-[10px] bg-primary-blue px-10 py-[15px] items-center justify-center font-bold text-xl text-white hover:text-primary-blue hover:bg-sky transition-all duration-300'
 					>
 						Работать с нами
-					</Link>
+					</Button>
 				</div>
 			</section>
 		</Container>

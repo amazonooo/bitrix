@@ -5,8 +5,8 @@ import Image from 'next/image'
 export default function FeedbackTop() {
 	return (
 		<Container className='w-full overflow-x-clip'>
-			<section className='w-full bg-sky lg:pl-20 lg:pt-20 lg:pr-8 rounded-xl pb-7 xl:pb-0'>
-				<div className='flex flex-col lg:flex-row justify-between'>
+			<section className='w-full bg-sky lg:pl-20 pt-8 lg:pr-8 rounded-xl pb-7 xl:pb-0'>
+				<div className='flex flex-col lg:flex-row justify-between items-center'>
 					<div className='flex flex-col lg:order-1 order-2 px-5 lg:px-0'>
 						<h1 className='lg:text-[2.5rem] text-3xl leading-[34px] font-bold mb-5 lg:mb-6 md:max-w-fit max-w-[270px]'>
 							Выведем ваш бизнес на новый уровень!
@@ -15,19 +15,9 @@ export default function FeedbackTop() {
 							Оставьте свой номер телефона, и мы свяжемся с вами, чтобы обсудить
 							развитие вашего бизнеса.
 						</p>
-						<form className='flex flex-col lg:flex-row gap-x-5'>
-							<div className='flex flex-col lg:flex-row lg:items-center gap-5 mb-5'>
-								<input
-									type='tel'
-									className='bg-white outline-none border-none rounded-[10px] pl-7 py-4 placeholder:text-use-gray focus:outline focus:outline-primary-blue transition-all duration-300 text-base lg:text-xl placeholder:lg:text-xl placeholder:text-base'
-									placeholder='+7 (254) 973-88-02'
-								/>
-							</div>
-
-							<Button variant='blue'  className='h-[60px]'>
-								Получить аудит
-							</Button>
-						</form>
+						<Button variant='blue' className='w-[249px]'>
+							Получить аудит
+						</Button>
 					</div>
 
 					<div className='order-1 lg:order-2 px-12 lg:px-0 mb-10 lg:mb-0'>

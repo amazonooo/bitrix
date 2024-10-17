@@ -23,10 +23,10 @@ export default function Footer() {
   return (
 		<footer className='lg:mt-[150px] mt-24 shadow-black shadow-2xl bg-white'>
 			<nav className='lg:pl-[3.75rem] pl-0 2xl:pl-0 2xl:max-w-[1328.5px] 2xl:ml-auto 2xl:mr-auto py-[1.875rem] flex flex-col lg:flex-row items-center justify-between'>
-				<div className='flex flex-col'>
+				<div className='flex flex-col items-center lg:items-start'>
 					<Link
 						href={'/'}
-						className='text-2xl font-extrabold uppercase text-primary-blue mr-5'
+						className='text-2xl font-extrabold uppercase text-primary-blue lg:mr-5'
 					>
 						УМЦ ВОА
 					</Link>
