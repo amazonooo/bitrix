@@ -104,7 +104,7 @@ export default function Header() {
 
 			{!isDesktop && (
 				<div
-					className={`fixed top-0 left-0 w-full pt-5 px-5 sm:px-10 z-50 transition-all duration-500 bg-white ${
+					className={`fixed top-0 left-0 w-full pt-5 px-5 sm:px-10 z-[500] transition-all duration-500 bg-white ${
 						isOpen ? 'shadow-none pb-0' : 'shadow-md pb-5'
 					}`}
 				>
@@ -148,7 +148,7 @@ export default function Header() {
 								isClosing ? 'animate-slide-down' : 'animate-slide-up'
 							}`}
 						>
-							<div className='px-5 sm:px-10 pt-[150px] h-full pb-20'>
+							<div className='px-5 sm:px-10 pt-[130px] h-full pb-[77px] z-[500]'>
 								<ul className='flex flex-col gap-y-6 max-w-[235px] mb-20'>
 									{navItems.map(item => (
 										<li onClick={menuClose} key={item.id}>
