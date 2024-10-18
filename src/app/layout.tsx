@@ -64,7 +64,7 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} antialiased min-h-screen overflow-x-hidden`}
 			>
-				<div className='flex flex-col min-h-screen relative'>
+				<div className='flex flex-col h-full relative overflow-y-hidden'>
 					<Header />
 					<BitrixWidget />
 					<main className='flex-1'>{children}</main>
