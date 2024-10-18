@@ -12,9 +12,9 @@ export default function Advantages() {
 					<span className='text-[2.5rem] lg:text-5xl text-primary-blue font-bold mr-2'>
 						1
 					</span>
-					<button className='text-start flex flex-1 items-center justify-between pb-3 lg:py-7 font-bold text-xl transition-all [&[data-state=open]>svg]:rotate-180'>
+					<p className='text-start flex flex-1 items-center justify-between pb-3 lg:py-7 font-bold text-xl transition-all [&[data-state=open]>svg]:rotate-180'>
 						Владельцем прав на приложение является заказчик 
-					</button>
+					</p>
 				</div>
 			</div>
 			<div className='w-full border-b border-b-use-gray'>
@@ -22,9 +22,9 @@ export default function Advantages() {
 					<span className='text-[2.5rem] lg:text-5xl text-primary-blue font-bold mr-2'>
 						2
 					</span>
-					<button className='text-start flex flex-1 items-center justify-between pb-3 lg:py-7 font-bold text-xl transition-all [&[data-state=open]>svg]:rotate-180'>
+					<p className='text-start flex flex-1 items-center justify-between pb-3 lg:py-7 font-bold text-xl transition-all [&[data-state=open]>svg]:rotate-180'>
 						Разрабатываем приложения всех видов{' '}
-					</button>
+					</p>
 				</div>
 			</div>
 			<DevelopAccordion />
@@ -33,9 +33,9 @@ export default function Advantages() {
 					<span className='text-[2.5rem] lg:text-5xl text-primary-blue font-bold mr-2'>
 						6
 					</span>
-					<button className='text-start flex flex-1 items-center justify-between pb-3 lg:py-7 font-bold text-xl transition-all [&[data-state=open]>svg]:rotate-180'>
+					<p className='text-start flex flex-1 items-center justify-between pb-3 lg:py-7 font-bold text-xl transition-all [&[data-state=open]>svg]:rotate-180'>
 						Высокий уровень сервиса на всех этапах разработки{' '}
-					</button>
+					</p>
 				</div>
 			</div>
 		</section>
