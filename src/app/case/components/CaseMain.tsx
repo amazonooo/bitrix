@@ -32,7 +32,7 @@ export default function CaseMain() {
 									– разработка плана и ТЗ,
 								</li>
 								<li className='text-base lg:text-lg xl:text-xl'>
-									– внедрение amoCRM,
+									– внедрение Bitrix24,
 								</li>
 								<li className='text-base lg:text-lg xl:text-xl'>
 									– автоматизация процесса работы (настройка воронки продаж
@@ -56,7 +56,7 @@ export default function CaseMain() {
 								</li>
 							</ul>
 							<li className='text-base lg:text-lg xl:text-xl mb-7'>
-								<span className='font-bold'>Результат:</span> с amoCRM
+								<span className='font-bold'>Результат:</span> с Birrix
 								в компаниях появилась чёткая структурированная система.
 							</li>
 							<li className='text-base lg:text-lg xl:text-xl'>
