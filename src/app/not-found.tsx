@@ -1,4 +1,5 @@
 import Button from '@/components/ui/Button'
+import Link from 'next/link'
 
 export default function NotFound() {
   return (
@@ -11,13 +12,12 @@ export default function NotFound() {
 					Эта страница не найдена
 				</h2>
 			</div>
-			<Button
-				variant={'blue'}
-				
-				className='text-white bg-primary-blue border-2 border-white px-20'
+			<Link
+				href={'/'}
+				className='rounded-[10px] text-white hover:text-primary-blue hover:bg-white bg-primary-blue transition-all duration-300 border-2 border-white px-20 py-[15px] flex items-center justify-center font-bold text-base md:text-xl'
 			>
 				На главную
-			</Button>
+			</Link>
 		</div>
 	)
 }
