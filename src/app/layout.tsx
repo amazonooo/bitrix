@@ -29,11 +29,11 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: 'УМЦ ВОА',
 		description: 'Автоматизация бизнеса посредством Bitrix24',
-		images: 'https://profpol.online/images/og-image.jpg',
+		images: 'https://kurs-auto.ru/images/og-image.jpg',
 		type: 'website',
 		locale: 'en_US',
 		url: 'https://kurs-auto.ru',
-		siteName: 'Profpol',
+		siteName: 'УМЦ ВОА',
 	},
 	robots: {
 		index: true,
