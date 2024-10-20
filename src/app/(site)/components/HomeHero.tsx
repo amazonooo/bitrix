@@ -22,9 +22,9 @@ export default function HomeHero() {
 					</div>
 
 					<div className='2xl:hidden flex flex-col gap-y-[30px]'>
-						<Image src={'/mes 1.png'} alt='mes' width={320} height={86} />
-						<Image src={'/mes 1.png'} alt='mes' width={320} height={86} />
-						<Image src={'/mes 1.png'} alt='mes' width={320} height={86} />
+						<Image src={'/mes-1.png'} alt='mes' width={320} height={86} />
+						<Image src={'/mes-2.png'} alt='mes' width={320} height={86} />
+						<Image src={'/mes-3.png'} alt='mes' width={320} height={86} />
 					</div>
 
 					<div className='flex-col gap-y-10 text-white hidden 2x:block 2xl:flex'>

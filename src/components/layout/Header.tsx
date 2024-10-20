@@ -45,20 +45,8 @@ export default function Header() {
 		setIsOpen(false)
 	}
 
-	const pathname = usePathname()
-	const isNotFound =
-		pathname !== '/' &&
-		pathname !== '/appdevelop' &&
-		pathname !== '/implementation' &&
-		pathname !== '/contacts' &&
-		pathname !== '/partners' &&
-		pathname !== '/services' &&
-		pathname !== '/case'
-
-	if (isNotFound) return null
-
 	useEffect(() => {
-		if(isOpen) {
+		if (isOpen) {
 			document.body.classList.add('overflow-hidden')
 		} else {
 			document.body.classList.remove('overflow-hidden')
@@ -68,6 +56,18 @@ export default function Header() {
 			document.body.classList.remove('overflow-hidden')
 		}
 	}, [isOpen])
+
+	const pathname = usePathname()
+	const isNotFound =
+		pathname !== '/' &&
+		pathname !== '/appdevelop/index.html' &&
+		pathname !== '/implementation/index.html' &&
+		pathname !== '/contacts/index.html' &&
+		pathname !== '/partners/index.html' &&
+		pathname !== '/services/index.html' &&
+		pathname !== '/case/index.html'
+
+	if (isNotFound) return null
 
   return (
 		<header>
