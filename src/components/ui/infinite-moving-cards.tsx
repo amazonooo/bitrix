@@ -80,11 +80,10 @@ export const InfiniteMovingCards = ({
 			>
 				{items.map((item, idx) => (
 					<li
-						className='relative rounded-xl bg-sky py-7 lg:py-8 px-16 lg:px-24 flex items-center justify-center min-h-[169px] max-h-[170px] w-[100px] h-[43px] md:w-auto md:h-auto'
+						className='relative rounded-xl bg-sky py-7 lg:py-8 px-16 lg:px-24 flex items-center justify-center min-h-[169px] max-h-[170px]'
 						key={item.logo}
 					>
-						<Image src={item.logo} alt='logo' width={250} height={80} className='hidden lg:block' />
-						<Image src={item.logo} alt='logo' width={25} height={25} className='block lg:hidden' />
+						<Image src={item.logo} alt='logo' width={250} height={80} />
 					</li>
 				))}
 			</ul>
