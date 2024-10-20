@@ -11,11 +11,11 @@ export default function DevelopApp() {
 						Разрабатываем приложения
 					</h1>
 					<div className='block xl:hidden'>
-						<p className='lg:text-xl text-base mb-6 xl:mb-10 max-w-[350px] font-medium xl:text-black text-white'>
+						<p className='text-base mb-6 xl:mb-10 max-w-[350px] font-medium text-white'>
 							Создаём отраслевые решения с учётом специфики отрасли клиента,
 							когда «коробочные решения» не подходят.
 						</p>
-						<p className='lg:text-xl text-base mb-14 xl:mb-6 max-w-[350px] font-medium xl:text-black text-white'>
+						<p className='text-base mb-14 xl:mb-6 max-w-[350px] font-medium text-white'>
 							Улучшение сервиса, обучение, повышение лояльности и увеличение
 							продаж — эти и другие задачи мы решаем с помощью приложений
 						</p>

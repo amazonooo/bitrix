@@ -38,11 +38,11 @@ export default function HomeCard(card: IHomeCard) {
 					<span className='xl:text-7xl text-5xl md:text-6xl font-bold'>%</span>
 				</h2>
 				<p
+					dangerouslySetInnerHTML={{ __html: card.desc }}
 					className={`text-sm sm:text-base lg:text-xl font-medium transition-colors duration-500 ${
 						isHovered ? 'text-white' : 'text-black'
 					}`}
 				>
-					{card.desc}
 				</p>
 			</div>
 		</article>

@@ -1,6 +1,6 @@
 'use client'
 
-import { partners1, partners2 } from '@/data/partners'
+import { partners1 } from '@/data/partners'
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
 
 export default function PartnersCard() {

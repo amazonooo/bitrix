@@ -69,14 +69,14 @@ export default function WorkCard(card: IWorkCard) {
   }, [isFormVisible])
   return (
 		<>
-			<article className='rounded-xl bg-sky px-[26px] pt-8 lg:py-0 lg:pt-[60px] lg:px-[60px] relative h-[375px] lg:h-[483px]'>
+			<article className='rounded-xl bg-sky px-[26px] pt-8 lg:py-0 lg:pt-[60px] lg:px-[59px] relative h-[375px] lg:h-[483px]'>
 				<h1 className='text-xl sm:text-2xl lg:text-3xl font-bold mb-6 max-w-[300px] lg:max-w-[380px]'>
 					{card.title}
 				</h1>
 				<ul className='flex flex-col'>
 					<li className='text-base md:text-lg lg:text-xl font-normal flex items-start lg:items-center gap-x-1'>
 						<div className='w-2 h-0.5 bg-black mt-[12.5px] lg:mt-1'></div>
-						{card.list1}26
+						{card.list1}
 					</li>
 					<li className='text-base md:text-lg lg:text-xl font-normal flex items-start lg:items-center gap-x-1'>
 						<div className='w-2 h-0.5 bg-black mt-[12.5px] lg:mt-1'></div>
