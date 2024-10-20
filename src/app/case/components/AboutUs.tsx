@@ -37,7 +37,7 @@ export default function AboutUs() {
 
 				<div className='bg-white border-2 border-use-gray px-5 lg:px-[30px] py-10 rounded-xl'>
 					<Image
-						src={'/partner-7.svg'}
+						src={'/kurs.png'}
 						alt='voa'
 						width={120}
 						height={120}
@@ -51,7 +51,7 @@ export default function AboutUs() {
 							Светлана, генеральный директор
 						</h2>
 						<p className='text-base lg:text-xl font-normal mb-7'>
-							Очень понравился подход сотрудников УЦ «ВОА». Тот случай, когда
+							Очень понравился подход сотрудников УЦ «ВОА». <br />Тот случай, когда
 							понимание задач есть с полуслова.
 						</p>
 						<p className='text-base lg:text-xl font-normal'>

@@ -6,10 +6,34 @@ export default function CaseMain() {
 			<div className='w-full bg-sky pt-10 lg:pt-20 pb-[30px] lg:pb-[50px] rounded-xl pl-5 lg:pl-[60px]'>
 				<div className='flex flex-col gap-y-10 lg:gap-y-[60px]'>
 					<div className='flex items-center gap-x-7 lg:gap-x-16'>
-						<Image className='hidden lg:block' src={'/partner-7.svg'} alt='avto' width={200} height={200} />
-						<Image className='hidden lg:block' src={'/voa.png'} alt='avto' width={200} height={200} />
-						<Image className='block lg:hidden' src={'/partner-7.svg'} alt='avto' width={121} height={121} />
-						<Image className='block lg:hidden' src={'/voa.png'} alt='avto' width={121} height={121} />
+						<Image
+							className='hidden lg:block'
+							src={'/partner-7.svg'}
+							alt='avto'
+							width={200}
+							height={200}
+						/>
+						<Image
+							className='hidden lg:block'
+							src={'/voa.png'}
+							alt='avto'
+							width={200}
+							height={200}
+						/>
+						<Image
+							className='block lg:hidden'
+							src={'/partner-7.svg'}
+							alt='avto'
+							width={121}
+							height={121}
+						/>
+						<Image
+							className='block lg:hidden'
+							src={'/voa.png'}
+							alt='avto'
+							width={121}
+							height={121}
+						/>
 					</div>
 
 					<div>
@@ -56,7 +80,7 @@ export default function CaseMain() {
 								</li>
 							</ul>
 							<li className='text-base lg:text-lg xl:text-xl mb-7'>
-								<span className='font-bold'>Результат:</span> с Birrix
+								<span className='font-bold'>Результат:</span> с Bitrix24
 								в компаниях появилась чёткая структурированная система.
 							</li>
 							<li className='text-base lg:text-lg xl:text-xl'>

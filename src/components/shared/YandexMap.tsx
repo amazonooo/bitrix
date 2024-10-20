@@ -12,7 +12,7 @@ const YandexMap: React.FC = () => {
 	return (
 		<YMaps>
 			<div className='sm:block flex justify-center items-center'>
-				<div className='w-[335px] lg:w-[762px] h-[242px] lg:h-[293px]'>
+				<div className='w-[335px] lg:w-[762px] h-[242px] lg:h-[293px] rounded-xl overflow-hidden'>
 					<Map state={mapState} width='100%' height='100%'>
 						<Placemark geometry={[55.707005, 37.677544]} />
 					</Map>

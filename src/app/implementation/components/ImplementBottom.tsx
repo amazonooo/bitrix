@@ -6,7 +6,7 @@ export default function ImplementBottom() {
   return (
 		<section>
 			<Image
-				className='block xl:hidden'
+				className='block xl:hidden mb-10'
 				src={'/crm.png'}
 				alt='crm'
 				width={735}
@@ -17,7 +17,7 @@ export default function ImplementBottom() {
 
 			<div className='flex xl:justify-between xl:items-center flex-col xl:flex-row gap-y-10'>
 				<div>
-					<div className='flex flex-col gap-y-6 max-w-[538px] mb-8 xl:mb-10'>
+					<div className='flex flex-col gap-y-6 max-w-[538px] mb-[30px] xl:mb-10'>
 						<p className='text-base md:text-xl font-medium'>
 							Внедрение Bitrix24 — это весь спектр возможностей CRM-системы,
 							а не только базовый функционал.{' '}
@@ -33,7 +33,7 @@ export default function ImplementBottom() {
 							и систему данных по продажам.
 						</p>
 					</div>
-					<Button variant='sky'  className='hidden xl:block w-[265px]'>
+					<Button variant='sky' className='w-full xl:w-[265px]'>
 						Внедрить Bitrix24
 					</Button>
 				</div>

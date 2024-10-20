@@ -54,11 +54,7 @@ export default function Footer() {
 						className={`flex items-center gap-x-1.5 group mt-1.5 lg:mt-0 order-1 lg:order-2`}
 					>
 						<Phone
-							className={`text-primary-blue transition-transform duration-300 ${
-								isHovered ? '-translate-y-0.5' : 'translate-y-0.5'
-							}`}
-							onMouseEnter={() => setIsHovered(true)}
-							onMouseLeave={() => setIsHovered(false)}
+							className={`text-primary-blue transition-transform duration-300`}
 						/>
 						<span className='text-xl font-medium'>+7 (916) 370-72-02</span>
 					</div>

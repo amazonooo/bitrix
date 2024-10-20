@@ -5,20 +5,20 @@ export default function CaseBottom() {
 		<section>
 			<div className='w-full bg-sky pt-10 lg:pt-20 pb-[30px] lg:pb-[50px] rounded-xl pl-5 lg:pl-[60px]'>
 				<div className='flex flex-col gap-y-0 lg:gap-y-3'>
-          <Image
-            className='hidden lg:block'
-            src={'/repair.png'}
-            alt='avto'
-            width={250}
-            height={250}
-          />
-          <Image
-            className='block lg:hidden'
-            src={'/repair.png'}
-            alt='avto'
-            width={160}
-            height={160}
-          />
+					<Image
+						className='hidden lg:block'
+						src={'/repair.png'}
+						alt='avto'
+						width={250}
+						height={250}
+					/>
+					<Image
+						className='block lg:hidden'
+						src={'/repair.png'}
+						alt='avto'
+						width={160}
+						height={160}
+					/>
 
 					<div>
 						<h1 className='text-xl font-bold md:text-3xl xl:leading-[60px] xl:text-5xl xl:font-semibold mb-4 lg:mb-6 max-w-[660px] text-primary-blue'>
@@ -38,7 +38,7 @@ export default function CaseBottom() {
 									– разработка плана и ТЗ,
 								</li>
 								<li className='text-base lg:text-lg xl:text-xl'>
-									– внедрение amoCRM,
+									– внедрение Bitrix24,
 								</li>
 								<li className='text-base lg:text-lg xl:text-xl'>
 									– автоматизация процесса работы (настройка воронки продаж
@@ -62,15 +62,15 @@ export default function CaseBottom() {
 								</li>
 							</ul>
 							<li className='text-base lg:text-lg xl:text-xl mb-7'>
-								<span className='font-bold'>Результат:</span> с amoCRM
+								<span className='font-bold'>Результат:</span> с Bitrix24
 								в компаниях появилась чёткая структурированная система.
 							</li>
 							<li className='text-base lg:text-lg xl:text-xl'>
-								<span className='font-bold'>Результат:</span> существенная часть идей начала
-								конвертироваться в задачи и доводиться до успешного результата,
-								коммуникации стали быстрее и проще, выстроенные воронки помогают
-								менеджеру поддерживать клиента на каждом этапе, максимально
-								качественно с ним работать.
+								<span className='font-bold'>Результат:</span> существенная часть
+								идей начала конвертироваться в задачи и доводиться до успешного
+								результата, коммуникации стали быстрее и проще, выстроенные
+								воронки помогают менеджеру поддерживать клиента на каждом этапе,
+								максимально качественно с ним работать.
 							</li>
 						</ul>
 					</div>

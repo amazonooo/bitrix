@@ -148,8 +148,8 @@ export default function Header() {
 								isClosing ? 'animate-slide-down' : 'animate-slide-up'
 							}`}
 						>
-							<div className='px-5 sm:px-10 pt-[115px] pb-8 z-[500]'>
-								<ul className='flex flex-col gap-y-6 max-w-[235px] pb-16'>
+							<div className='px-5 sm:px-10 pt-[100px] pb-7 z-[500]'>
+								<ul className='flex flex-col gap-y-[1.25rem] max-w-[235px] pb-16'>
 									{navItems.map(item => (
 										<li onClick={menuClose} key={item.id}>
 											<Link
@@ -162,7 +162,7 @@ export default function Header() {
 									))}
 								</ul>
 
-								<div className='flex flex-col gap-y-6'>
+								<div className='flex flex-col gap-y-[1.25rem]'>
 									<div>
 										<h1 className='text-xl font-semibold'>УМЦ ВОА</h1>
 										<h2 className='text-sm font-normal'>Учебный центр</h2>
