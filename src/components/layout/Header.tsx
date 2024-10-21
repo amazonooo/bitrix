@@ -60,12 +60,12 @@ export default function Header() {
 	const pathname = usePathname()
 	const isNotFound =
 		pathname !== '/' &&
-		pathname !== '/appdevelop' &&
-		pathname !== '/implementation' &&
-		pathname !== '/contacts' &&
-		pathname !== '/partners' &&
-		pathname !== '/services' &&
-		pathname !== '/case'
+		pathname !== '/appdevelop/index.html' &&
+		pathname !== '/implementation/index.html' &&
+		pathname !== '/contacts/index.html' &&
+		pathname !== '/partners/index.html' &&
+		pathname !== '/services/index.html' &&
+		pathname !== '/case/index.html'
 
 	if (isNotFound) return null
 
@@ -180,11 +180,11 @@ export default function Header() {
 												+7 (916) 370-72-02
 											</span>
 										</div>{' '}
-										<div className={`flex items-center gap-x-1.5 group mt-1.5`}>
-											<MapPin size={17} className={`text-primary-blue`} />
+										<div className={`flex items-start gap-x-1.5 group mt-1.5`}>
+											<MapPin size={17} className={`text-primary-blue mt-[4.45px]`} />
 											<span className='text-base font-normal'>
 												{' '}
-												Балашиха, мкр.Железнодорожный, ул. Пионерская д.33, пом.
+												Балашиха, мкр.Железнодорожный, <br />ул. Пионерская д.33, пом.
 												13{' '}
 											</span>
 										</div>
