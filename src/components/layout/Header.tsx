@@ -60,12 +60,12 @@ export default function Header() {
 	const pathname = usePathname()
 	const isNotFound =
 		pathname !== '/' &&
-		pathname !== '/appdevelop/index.html' &&
-		pathname !== '/implementation/index.html' &&
-		pathname !== '/contacts/index.html' &&
-		pathname !== '/partners/index.html' &&
-		pathname !== '/services/index.html' &&
-		pathname !== '/case/index.html'
+		pathname !== '/appdevelop' &&
+		pathname !== '/implementation' &&
+		pathname !== '/contacts' &&
+		pathname !== '/partners' &&
+		pathname !== '/services' &&
+		pathname !== '/case'
 
 	if (isNotFound) return null
 

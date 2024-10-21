@@ -2,31 +2,31 @@ export const navItems = [
 	{
 		id: '1',
 		name: 'Внедрение',
-		href: '/implementation/index.html',
+		href: '/implementation',
 	},
 	{
 		id: '2',
 		name: 'Консалтинговые услуги',
-		href: '/services/index.html',
+		href: '/services',
 	},
 	{
 		id: '3',
 		name: 'Разработка приложений',
-		href: '/appdevelop/index.html',
+		href: '/appdevelop',
 	},
 	{
 		id: '4',
 		name: 'Кейсы',
-		href: '/case/index.html',
+		href: '/case',
 	},
 	{
 		id: '5',
 		name: 'Партнеры',
-		href: '/partners/index.html',
+		href: '/partners',
 	},
 	{
 		id: '6',
 		name: 'Контакты',
-		href: '/contacts/index.html',
+		href: '/contacts',
 	},
 ]
