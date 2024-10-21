@@ -17,11 +17,15 @@ export default function StagesCard() {
 					{stagesData.map(stage => (
 						<div key={stage.id} className='flex flex-col items-center'>
 							<div className='w-[70px] h-[70px] flex items-center justify-center rounded-full bg-primary-blue mb-5'>
-								<span className='text-white font-bold text-[2.5rem]'>{stage.id}</span>
+								<span className='text-white font-bold text-[2.5rem]'>
+									{stage.id}
+								</span>
 							</div>
-              <h2 className='text-xl font-semibold text-center'>
-                {stage.text}
-              </h2>
+							<h2
+								dangerouslySetInnerHTML={{ __html: stage.text }}
+								className='text-xl font-semibold text-center'
+							>
+							</h2>
 						</div>
 					))}
 				</div>

@@ -86,9 +86,12 @@ export default function WorkCard(card: IWorkCard) {
 						<div className='w-2 h-0.5 bg-black mt-[12.5px] lg:mt-1'></div>
 						{card.list3}
 					</li>
-					<li className='text-base md:text-lg lg:text-xl font-normal flex items-start lg:items-center gap-x-1'>
-						<div className='w-2 h-0.5 bg-black mt-[12.5px] lg:mt-1'></div>
-						{card.list4}
+					<li
+						dangerouslySetInnerHTML={{ __html: card.list4 }}
+						className='relative text-base md:text-lg lg:text-xl font-normal flex items-start lg:items-center gap-x-1 ml-3 before:w-2 before:absolute before:-left-3 before:h-0.5 before:bg-black before:top-[12.5px] before:lg:t-2'
+					>
+						{/* <div className='w-2 h-0.5 bg-black mt-[12.5px] lg:mt-1'></div> */}
+						{/* {card.list4} */}
 					</li>
 				</ul>
 				<button

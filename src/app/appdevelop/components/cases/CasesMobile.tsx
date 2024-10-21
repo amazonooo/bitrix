@@ -15,6 +15,24 @@ export default function CasesMobile() {
 	const [currentCase, setCurrentCase] = useState(0)
   const [currentImg, setCurrentImg] = useState(0)
 
+  const handleSwipe = (direction: 'next' | 'prev') => {
+		if (direction === 'next') {
+			if (currentImg < casesData[currentCase].intervalImgs.length - 1) {
+				setCurrentImg(currentImg + 1)
+			} else if (currentCase < casesData.length - 1) {
+				setCurrentImg(0)
+				setCurrentCase(currentCase + 1)
+			}
+		} else {
+			if (currentImg > 0) {
+				setCurrentImg(currentImg - 1)
+			} else if (currentCase > 0) {
+				setCurrentCase(currentCase - 1)
+				setCurrentImg(casesData[currentCase - 1].intervalImgs.length - 1)
+			}
+		}
+	}
+
 	return (
 		<div className='w-full'>
 			<h1 className='text-3xl leading-[40px] text-primary-blue font-bold mb-4 text-center'>
@@ -22,10 +40,14 @@ export default function CasesMobile() {
 			</h1>
 
 			<Swiper
-				spaceBetween={16}
-				slidesPerView={1}
-        className='mb-6 lg:mb-[50px]'
+				spaceBetween={10}
+				slidesPerView={1.2}
+				className='mb-6 lg:mb-[50px]'
 				onSlideChange={swiper => setCurrentCase(swiper.realIndex)}
+				onSwiper={swiper => {
+					swiper.on('slideNextTransitionStart', () => handleSwipe('next'))
+					swiper.on('slidePrevTransitionStart', () => handleSwipe('prev'))
+				}}
 			>
 				{casesData.map((caseItem, index) => (
 					<SwiperSlide key={index}>

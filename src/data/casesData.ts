@@ -2,7 +2,7 @@ export const casesData = [
 	{
 		id: '1',
 		title: 'Автошкола «ВОА»',
-		intervalImgs: ['/avto-1.png', '/avto-2.png'],
+		intervalImgs: ['/avto-1.png', '/avto-2.png', '/avto-3.png'],
 		subtitle: 'Кабинет администратора',
 	},
 	{
