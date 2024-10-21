@@ -46,7 +46,7 @@ export default function Footer() {
 						/>
 						<span className='text-xl font-medium'>
 							{' '}
-							г. Балашиха, ул. Пионерская, д. 33
+							Балашиха, мкр.Железнодорожный, ул. Пионерская д.33, пом. 13{' '}
 						</span>
 					</div>
 

@@ -18,7 +18,7 @@ export default function ContactsHero() {
 					<div className='flex flex-col gap-y-2 max-w-[350px]'>
 						<h2 className='text-xl md:text-[1.625rem] font-semibold'>Адрес:</h2>
 						<p className='text-xl md:text-[1.625rem] font-normal'>
-							143987, МО, г. Балашиха, <br />ул. Пионерская, д. 33
+							Балашиха, мкр.Железнодорожный, <br />ул. Пионерская д.33, пом. 13{' '}
 						</p>
 					</div>
 					<div className='flex flex-col gap-y-2 max-w-[350px]'>

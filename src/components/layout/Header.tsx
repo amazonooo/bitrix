@@ -184,7 +184,8 @@ export default function Header() {
 											<MapPin size={17} className={`text-primary-blue`} />
 											<span className='text-base font-normal'>
 												{' '}
-												г. Балашиха, ул. Пионерская, д. 33
+												Балашиха, мкр.Железнодорожный, ул. Пионерская д.33, пом.
+												13{' '}
 											</span>
 										</div>
 									</div>

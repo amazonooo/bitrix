@@ -20,7 +20,7 @@ export default function PartnersHero() {
 					</div>
 
 					<Image
-						src={'/digital-contract 1.png'}
+						src={'/digital-contract.png'}
 						alt='digital'
 						width={545}
 						height={545}
